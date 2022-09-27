@@ -29,7 +29,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/sophie-h/key-rack.git
-        commit: 152b8f9ede0eeaa6ac5aebc8da22301f89672a48
+        commit: 1120adb790acab57a8f74fce64eccd61083a987d
       # generated via flatpak-builder-tools
       - generated-sources.json
       # copy generated cargo config
