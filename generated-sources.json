@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/bilelmoussaoui/oo7",
-        "commit": "bdb69360e92c1681c36098e23d4871870be8fef3",
-        "dest": "flatpak-cargo/git/oo7-bdb6936"
+        "commit": "a04c5e2be30df2f6e974f6aa5ef4708abd063d7f",
+        "dest": "flatpak-cargo/git/oo7-a04c5e2"
     },
     {
         "type": "archive",
@@ -1464,7 +1464,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/oo7-bdb6936/.\" \"cargo/vendor/oo7\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/oo7-a04c5e2/.\" \"cargo/vendor/oo7\""
         ]
     },
     {
