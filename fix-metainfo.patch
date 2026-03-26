@@ -1,0 +1,42 @@
+From 731b67bedc0a5946200e19edfa48270756cbaf2f Mon Sep 17 00:00:00 2001
+From: Cedric Staniewski <cedric@gmx.ca>
+Date: Thu, 26 Mar 2026 01:00:27 +0100
+Subject: [PATCH] metainfo: add missing paragraph tags to fix linter warnings
+
+This commit fixes the following linter warnings that cause build failures on
+flathub:
+
+W: app.drey.KeyRack: description-spurious-text
+   The description element contains raw text that is not in any paragraph or other permitted tag.
+   This is not allowed and the additional text may be ignored by parsers or raise errors.
+
+W: app.drey.KeyRack: description-no-valid-content
+   The description element does not contain any valid content (paragraphs, enumerations, etc.).
+---
+ data/app.drey.KeyRack.metainfo.xml.in | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/data/app.drey.KeyRack.metainfo.xml.in b/data/app.drey.KeyRack.metainfo.xml.in
+index 0f4f235..dffbcba 100644
+--- a/data/app.drey.KeyRack.metainfo.xml.in
++++ b/data/app.drey.KeyRack.metainfo.xml.in
+@@ -62,12 +62,14 @@
+   <releases>
+     <release version="0.4.0" date="2024-07-01">
+       <description>
+-        This version bring a completely overhauled user interface. But the changes go much further than a better look. Key Rack now allows to view all host keyrings as well to change passwords of keyrings. Passwords can now be found more easily via the new search function and new passwords can be added via the interface.
++        <p>
++          This version bring a completely overhauled user interface. But the changes go much further than a better look. Key Rack now allows to view all host keyrings as well to change passwords of keyrings. Passwords can now be found more easily via the new search function and new passwords can be added via the interface.
++        </p>
+       </description>
+     </release>
+     <release version="0.3.0" date="2024-01-06">
+       <description>
+-        Add support for system wide secrets.
++        <p>Add support for system wide secrets.</p>
+       </description>
+     </release>
+     <release version="0.2.0" date="2022-09-27">
+-- 
+2.53.0
+

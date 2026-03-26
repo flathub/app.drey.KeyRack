@@ -1,7 +1,7 @@
 id: app.drey.KeyRack
 command: key-rack
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -37,3 +37,6 @@ modules:
         commands:
           - mkdir .cargo
           - cp cargo/config .cargo/
+
+      - type: patch
+        path: fix-metainfo.patch
