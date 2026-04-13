@@ -1,7 +1,7 @@
 id: app.drey.KeyRack
 command: key-rack
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -29,7 +29,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/sophie-h/key-rack.git
-        commit: 2996355b89a1a62277fe231d1ec15635a9f3af9f
+        commit: edb3564e1dfeeedfb33862995213fa6123c67c1f 
       # generated via flatpak-builder-tools
       - generated-sources.json
       # copy generated cargo config
